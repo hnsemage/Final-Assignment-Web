@@ -1,7 +1,7 @@
 .title1{
 	color:#0041C2;
 	text-align: center;
-	font-size: 500%;
+	font-size: 350%;
 	font-family:Courier;
 }
 body{
@@ -24,9 +24,21 @@ body{
 	width: 100%;
 	height: 50%;
 }
+.title1{
+	color:#0041C2;
+	text-align: center;
+	font-size: 500%;
+	font-family:Courier;
+}
 }
 @media screen and (min-width: 1000px){
 	.img1{
 	width: 100%;
-	height: 50%;
+	height: 50%;}
+	.title1{
+	color:#0041C2;
+	text-align: center;
+	font-size: 500%;
+	font-family:Courier;
+}
 }

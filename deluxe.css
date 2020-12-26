@@ -1,5 +1,11 @@
 body{
 	background:#B6B6B4;
+	margin: 0px;
+	padding: 0px;
+}
+.margin{
+	margin:  14px;
+	padding: 14px;
 }
 .img1{
 	width: 100%;

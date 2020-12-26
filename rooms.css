@@ -72,6 +72,20 @@ body{
 	font-size: 25px;
 	font-family:Centaur; 
 }
+.footer {
+   position: static;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: transparent;
+   color:black;
+   text-align: center;
+   font-size: 120%;
+}
+.link2{
+	text-decoration: none;
+	color: black;
+}
 @media screen and (min-width: 1000px){
 	.img1{
 	width: 100%;

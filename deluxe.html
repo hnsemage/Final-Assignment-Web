@@ -24,7 +24,31 @@
   		</a>
 	</div>
 	<div class="all">
-	<img src="deluxe01.jpg"  class="img1">
+	<div class="slideshow-container">
+			<div class="mySlides fade">
+				
+				<img src="deluxe01.jpg" alt="1" class="img1">
+			</div>
+			<div class="mySlides fade">
+				
+				<img src="deluxe02.jpg"  class="img1">
+			</div>
+			<div class="mySlides fade">
+				
+				<img src="deluxe03.jpg" class="img1">
+			</div>
+			<div class="mySlides fade">
+				
+				<img src="deluxe03.jpg" class="img1">
+			</div>
+		</div>
+		<br>
+			<div style="text-align:center">
+  				<span class="dot"></span> 
+  				<span class="dot"></span> 
+  				<span class="dot"></span> 
+  				<span class="dot"></span>
+			</div>
 	<div class="title1">
 		<p >Deluxe Room</p>
 	</div>
@@ -105,5 +129,29 @@
     	</ul>
     </div>
 </div>
+<div class="footer">
+  <p> &nbsp;&nbsp; <a class="link2" href="contact.html">Contact&nbsp;&nbsp;</a>|&nbsp;&nbsp;@2017-2020&nbsp;&nbsp;|&nbsp;&nbsp;Sea Side South Park Hotel&nbsp;&nbsp;|&nbsp;&nbsp;All Rights Reserved&nbsp;&nbsp;</p>
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); 
+}
+</script>
 </body>
 </html>

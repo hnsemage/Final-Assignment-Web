@@ -3,21 +3,25 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"href="asscss.css">
-
+<link rel="stylesheet" type="text/css" href="nav.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="nav.js"></script>
 </head>
 <body>
 
-<div class="topnav responsive"id="myTopnave">
-  <a class="active" href="#home">Home</a>
-  <a href="#news">About Us</a>
-  <a href="#contact">Contact Us</a>
-  <a href="rooms.html">Accommodations</a>
-  <a href="#about">Hotel Reservation</a>
-  <a href="#about">Multiple Hotel</a>
-  <a href="registration.html">Registration</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-</div>
+  <div class="topnav" id="myTopnav">
+    <font face="Harrington"><p class="slogan">Your Lifestyle</p></font>
+      <a href="asshtml.html">Home</a>
+    <a href="#news">About</a>
+      <a href="#contact">Contact</a>
+      <a href="rooms.html">Accommodations</a>
+      <a href="#about">Booking</a>
+      <a href="#about">Experice</a>
+      <a href="registration.html">Registration</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+  </div>
 
 
 
@@ -80,16 +84,6 @@ function showSlides() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-
 </script>
 
 

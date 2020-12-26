@@ -1,5 +1,11 @@
 body{
 	background:#B6B6B4;
+	margin: 0px;
+	padding: 0px;
+}
+.all{
+	margin: 14px;
+	padding: 14px;
 }
 .img1{
 	width: 100%;
@@ -34,6 +40,15 @@ body{
 	font-family: "Candara Light";
 	font-weight: bold;
 }
+.button1{
+	background:#616D7E; 
+	width: 	100px;
+	height: 40px;
+	border: none;
+	font-size: 20px;
+	font-family:Courier; 
+	font-weight: bold;
+	margin-top: 70px;
 }
 @media screen and (min-width: 768px){
 	.img1{
@@ -59,6 +74,16 @@ body{
 	
 	font-size: 150%;font-family: "Ink Free";
 }
+.button1{
+	background:#616D7E; 
+	width: 	100px;
+	height: 40px;
+	border: none;
+	font-size: 20px;
+	font-family:Courier; 
+	font-weight: bold;
+	margin-top: 70px;
+}
 }
 @media screen and (min-width: 1000px){
 	.img1{
@@ -81,5 +106,15 @@ body{
 	font-size: 140%;
 	font-family: "Ink Free";
 	font-weight: bold;
+}
+.button1{
+	background:#616D7E; 
+	width: 	180px;
+	height: 50px;
+	border: none;
+	font-size: 30px;
+	font-family:Courier; 
+	font-weight: bold;
+	margin-top: 70px;
 }
 }

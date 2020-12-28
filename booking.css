@@ -5,7 +5,10 @@
 	padding-top: 100px;
 	font-size: 100%;
 }
-
+.link2{
+	text-decoration: none;
+	color: black;
+}
 
 body{
 	background:#B6B6B4;

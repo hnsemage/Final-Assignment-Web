@@ -5,6 +5,14 @@
 	padding-top: 100px;
 	font-size: 100%;
 }
+
+
+body{
+	background:#B6B6B4;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
 .list2{
 	padding-left:  14px;
 }
@@ -72,7 +80,7 @@
 
 }
 }
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1080px){
 	.img1{
 	width: 60%;
 	height: 65%;

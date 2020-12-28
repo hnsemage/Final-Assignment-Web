@@ -1,4 +1,4 @@
-body {font-family: Arial, Helvetica, sans-serif;}
+body { background-color:#B6B6B4;}
 * {box-sizing: border-box;}
 .input-container {
   display:  flexbox; /* IE10 */

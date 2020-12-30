@@ -5,6 +5,37 @@ box-sizing: border-box;
   margin: 14px;
 padding: 14px;
 }
+}
+.topnav {
+  overflow: hidden;
+  background-color: black;
+
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #C2DFFF;
+  text-align: center;
+  padding: 40px 20px;
+  text-decoration: none;
+  padding:70px 15px 1px 15px;
+  font-size: 25px;
+}
+
+.topnav a:hover {
+  background-color: black;
+  color: grey;
+}
+
+.topnav a.active {
+  background-color: #2B547E;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
 .title1{
   color:#0041C2;
   text-align: center;

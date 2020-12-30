@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
   <title>LogIn page</title>
 
 
-  <link rel="stylesheet"href="asscss.css">
+<link rel="stylesheet"href="asscss.css">
 <link rel="stylesheet" type="text/css" href="nav.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script type="text/javascript" src="nav.js"></script>
@@ -30,21 +30,37 @@
       </a>
   </div>
 
-<form action="login-in.php" method="POST" style="max-width:500px;margin:auto">
-  <h2>Log In</h2>
-  <div class="input-container">
-    <i class="fa fa-user icon"></i>
-    <input class="input-field" type="text" placeholder="Username" name="username">
-  </div>
-
-
+<form action="login-in.php" method="POST" >
   
-  <div class="input-container">
-    <i class="fa fa-key icon"></i>
-    <input class="input-field" type="password" placeholder="Password" name="pword">
-  </div>
-
-  <input type="submit" class="btn" name="Log In">
+  <div class="container">
+    <table>
+      <tr>
+        <td><h2>Log In</h2></td>
+      </tr>
+      <tr>
+             <td><div class="input-container"><i class="fa fa-user icon"></i>
+             <input class="input-field" type="text" placeholder="Username" name="username"></td>
+   </div>
+    </tr>
+    <tr>
+      <td><div class="input-container">
+              <i class="fa fa-key icon"></i>
+              <input class="input-field" type="password" placeholder="Password" name="pword"></td>
+    </div>
+    </tr>
+    <tr>
+    <td>
+      <input type="submit" class="btn" name="Log In"></td>
+    </tr>
+  
+  </table>
+</div>
 </form>
+<br>
+<br>
+<br>
+<div class="footer">
+  <p> &nbsp;&nbsp; <a class="link2" href="contact.html">Contact&nbsp;&nbsp;</a>|&nbsp;&nbsp;@2017-2020&nbsp;&nbsp;|&nbsp;&nbsp;Sea Side South Park Hotel&nbsp;&nbsp;|&nbsp;&nbsp;All Rights Reserved&nbsp;&nbsp;</p>
+</div>
 </body>
 </html>

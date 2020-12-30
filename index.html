@@ -15,53 +15,55 @@
 <body style="background-color: #B6B6B4">
 	<div class="topnav" id="myTopnav">
 <img class="slogan" src="logo.png">
-<a href="asshtml.html">Home</a>
-<a href="#news">About</a>
-<a href="#contact">Contact</a>
+<a href="Home.html">Home</a>
+<a href="About Us.html">About</a>
+<a href="index.html">Contact</a>
 <a href="rooms.html">Accommodations</a>
-<a href="#about">Booking</a>
-<a href="#about">Experience</a>
+<a href="booking.html">Booking</a>
+<a href="fasili.html">Facilities</a>
 <a href="registration.html">Registration</a>
 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
 <i class="fa fa-bars"></i>
 </a>
 </div>
-
-<center>
 <div class="all">
-<img src="pic1.JPG" class="image">
-<div class="body">
-
-	<form method="post" action="contact.html">
-		<div id="login">
-			<h1>Contact Name Here</h1>
-<h3>Contact</h3>
-<i class="fa fa-book"> &nbsp hello how are you</i><br><br>
-<i class="fa fa-envelope"><a href="mailto:someone@example.com"> &nbsp Send email</a></i><br><br>
-<i class="fa fa-fax"><a href="tel:+4733378901"> &nbsp Telephone</a></i><br><br>
-<i class="fa fa-fax"><a href="tel:+4733378901"> &nbsp Fax</a></i>
-	<H3>Contact Form</H3>
-	<P></P>
-<label for="name">Name</label> <input type="text" name="fname" id="name" required="required"><br>
-<label for="email">Email </label><input type="email" name="email" id="email"required="required">
-<label for="subj">Subject </label><input type="text" name="sub" id="subj"required="required">
+	<center>
+		<img src="pic1.JPG" class="image">
+		<div>
+			<form method="post" action="contact.html">
+		<div >
+			<p class="title1">Contact</p>
+			<div class="detail1">
+<i class="fa fa-envelope">&nbsp;&nbsp;<a href="mailto:someone@example.com">Send email</a></i><br><br>
+<i class="fa fa-fax"> &nbsp; &nbsp;<a href="tel:+4733378901">Telephone</a></i><br><br>
+<i class="fa fa-fax">&nbsp; &nbsp;<a href="tel:+4733378901">Fax</a></i>
+</div>
+<div>
+	<p class="title1">Contact Form</p>
+	<div class="detail1">
+<label for="name">Name</label> <input type="text" name="fname" id="name" required="required" ><br><br>
+<label for="email">Email </label><input type="email" name="email" id="email"required="required" ><br><br>
+<label for="subj">Subject </label><input type="text" name="sub" id="subj"required="required" >
+</div>
 <br>
-<p>Massege</p>
+<p  class="detail1">Message</p>
 <textarea name="comment" cols="41" rows="10"></textarea><br><br>
-<button type="submit" class="registerbtn">Register</button>
-<button type="reset" class="resetbtn">Cancel</button>
-<button type="submit" class="registerbtn">Login</button>
+<table>
+	<tr>
+<td><button type="submit" class="registerbtn" onclick="window.location.href='registration.html'">Register</button></td>
+<td><button type="reset" class="resetbtn">Cancel</button></td>
+<td><button type="submit" class="registerbtn" onclick="window.location.href='loginIN.html'">Login</button></td>
+</tr>
+</table>
+</div>
 </div>			
-
-
-
-<div class="footer">
+</form>
+		</div>
+	</center>
+	<div class="footer">
   <p> &nbsp;&nbsp;
  <a class="link2" href="contact.html">Contact&nbsp;&nbsp;</a>|&nbsp;&nbsp;@2017-2020&nbsp;&nbsp;|&nbsp;&nbsp;Sea Side South Park Hotel&nbsp;&nbsp;|&nbsp;&nbsp;All Rights Reserved&nbsp;&nbsp;
 </p>
 </div>
-
-</form>
-</center>
 </body> 
 </html>

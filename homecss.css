@@ -1,0 +1,29 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+* {box-sizing: border-box;}
+.myslides{display: none;}
+img {vertical-align: middle;}
+
+h1{
+	 color:#0041C2;
+  font-size: 300%;
+  font-family:Papyrus;
+}
+
+.column img {
+opacity: 0.8;
+cursor: pointer;
+width: 40%;
+height: 40%;
+}
+
+.column img:hover {
+opacity: 0.5;
+}
+
+.column{
+	margin-right:300px;
+
+}

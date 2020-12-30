@@ -64,7 +64,7 @@ function userIdExists($con,$name,$email)
 	$stmt=mysqli_stmt_init($con);
 	if(!mysqli_stmt_prepare($stmt,$sql))
 	{
-		header("location:registration.html?error=stmtFailed");
+		echo "<br><center><h3>location:registration.html?error=stmtFailed</h3></center>" ;
         exit();
 	}
 	mysqli_stmt_bind_param($stmt,"ss",$name,$email);
@@ -90,7 +90,7 @@ function createUser($con,$name,$email,$pword)
 	$stmt=mysqli_stmt_init($con);
 	if(!mysqli_stmt_prepare($stmt,$sql))
 	{
-		header("location:registration.html?error=stmtFailed");
+		echo "<br><center><h3>location:registration.html?error=stmtFailed</h3></center>";
         exit();
 	}
 
@@ -99,7 +99,7 @@ function createUser($con,$name,$email,$pword)
 	mysqli_stmt_bind_param($stmt,"sss",$name,$email,$hashedPwd);
 	mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
-    header("location:registration.html?error=none");
+    echo "<br><center><h3>location:registration.html?error=none</h3></center>";
     exit();
 }
 /*

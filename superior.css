@@ -42,8 +42,8 @@ body{
 	font-weight: bold;
 }
 .button1{
-	background:#616D7E; 
-	width: 	100px;
+	background:#4863A0; 
+	width: 	170px;
 	height: 40px;
 	border: none;
 	font-size: 20px;
@@ -92,6 +92,16 @@ body{
 	text-decoration: none;
 	color: black;
 }
+.title3{
+	text-align: left;
+	font-family:Centaur;
+	font-size: 200%; 
+}
+.main1{
+	text-align: left;
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
 @media screen and (min-width: 768px){
 	.img1{
 	width: 100%;
@@ -117,8 +127,8 @@ body{
 	font-size: 150%;font-family: "Ink Free";
 }
 .button1{
-	background:#616D7E; 
-	width: 	100px;
+	background:#4863A0; 
+	width: 	180px;
 	height: 40px;
 	border: none;
 	font-size: 20px;
@@ -150,8 +160,8 @@ body{
 	font-weight: bold;
 }
 .button1{
-	background:#616D7E; 
-	width: 	180px;
+	background:#4863A0; 
+	width: 240px;
 	height: 50px;
 	border: none;
 	font-size: 30px;

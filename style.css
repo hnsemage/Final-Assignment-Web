@@ -1,0 +1,99 @@
+body{
+			 background-color:#B6B6B4;
+       color: black; 
+      
+		}
+
+		* {
+         box-sizing: border-box;
+        }
+   h2
+   {
+    margin-left: 5px;
+
+   }
+  input[type=text],input[type=password]{
+              width: 90%;
+              padding: 10px;
+              margin: 3px 0 5px 0;  
+              border: 1px solid gray;
+              border-radius: 5px;
+              transition-duration: 0.4s;
+        }
+        input[type=text]:hover
+        {
+        	 box-shadow: 1px 1px 4px dodgerblue;
+        }
+       input[type=password]:hover
+        {
+        	 box-shadow: 1px 1px 4px dodgerblue;
+        }
+       
+        input[type=submit]
+        {
+        	border:1px solid dodgerblue;
+        	border-radius: 5px;
+        	background-color: white;
+        	color: dodgerblue;
+        	padding: 12px 90px;
+        	font-size: 16px;
+        	 transition-duration: 0.4s;
+        }
+		input[type=submit]:hover
+		{
+        	border:1px solid dodgerblue;
+        	background-color: dodgerblue;
+        	color: white;
+        	 box-shadow: 1px 1px 4px dodgerblue;
+		}
+		.container{
+      width:350px;
+      margin-left:500px; 
+      margin-top:10px; 
+      background-color:white;
+      border-radius: 5px;
+      
+    }
+table, td { 
+  padding:5px;
+}
+       
+a{
+    	color: dodgerblue;
+}
+.footer {
+   position: static;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: transparent;
+   color:black;
+   text-align: center;  
+}
+.link2{
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 900px) {
+  .container{
+  margin-left:300px; 
+   margin-top:6px; 
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container{
+  margin-left:20px; 
+   margin-top:6px; 
+  }
+  }
+
+  @media screen and (max-width: 320px) {
+  .container{
+  margin-left:4px; 
+   margin-top:0px; 
+  }
+  }
+
+

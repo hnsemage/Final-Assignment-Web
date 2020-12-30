@@ -1,33 +1,33 @@
-
-.para1{​​​​​
+.para1{
 color:black;
 text-align: center;
 font-size: 100%;
 font-family:Courier;
-}​​​​​
-.title1{​​​​​
+}
+.title1{
 font-size: 250%;
-}​​​​​
-.title2{​​​​​
+}
+.title2{
 color:black;
 
 font-size: 200%;
 font-family:Papyrus;
-}​​​​​
-.image{​​​​​height:50% ; width:100% ; }​​​​​
-@media screen and (min-width: 768px){​​​​​
-.para{​​​​​font-size: 250%;}​​​​​
- }​​​​​
-.title1{​​​​​
-font-size: 200%;
-}​​​​​
-}​​​​​
- @media screen and (min-width: 1000px){​​​​​
-.para{​​​​​font-size: 200%;}​​​​​
-}​​​​​
-.title1{​​​​​
-font-size: 350%;
-}​​​​​
-}​​​​​
-    
+}
+.image{height:50% ; width:100% ; }
 
+@media screen and (min-width: 768px){
+.para{font-size: 250%;}
+
+ }
+.title1{
+font-size: 200%;
+}
+}
+
+ @media screen and (min-width: 1000px){
+.para{font-size: 200%;}
+}
+.title1{
+font-size: 350%;
+}
+}

@@ -1,5 +1,5 @@
 <?php
-
+include 'registration.html';
 include 'dbh.php';
 include 'functions.php';
 

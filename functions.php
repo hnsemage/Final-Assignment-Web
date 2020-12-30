@@ -64,7 +64,7 @@ function userIdExists($con,$name,$email)
 	$stmt=mysqli_stmt_init($con);
 	if(!mysqli_stmt_prepare($stmt,$sql))
 	{
-		echo "<br><center><h3>location:registration.html?error=stmtFailed</h3></center>" ;
+		echo "<center><h3>Something went wrong,try again!</h3></center>";
         exit();
 	}
 	mysqli_stmt_bind_param($stmt,"ss",$name,$email);
@@ -90,60 +90,16 @@ function createUser($con,$name,$email,$pword)
 	$stmt=mysqli_stmt_init($con);
 	if(!mysqli_stmt_prepare($stmt,$sql))
 	{
-		echo "<br><center><h3>location:registration.html?error=stmtFailed</h3></center>";
+	      echo "<center><h3>Something went wrong,try again!</h3></center>";
         exit();
 	}
 
-	$hashedPwd=password_hash($pword,PASSWORD_DEFAULT);
+	
 
-	mysqli_stmt_bind_param($stmt,"sss",$name,$email,$hashedPwd);
+	mysqli_stmt_bind_param($stmt,"sss",$name,$email,$pword);
 	mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
-    echo "<br><center><h3>location:registration.html?error=none</h3></center>";
+    echo "<center><h3>You have signed up!</h3></center>";
     exit();
 }
-/*
-function  emptyInputLogin($name,$pwd)
-{
-  $result;
-  if(empty($name) || empty($pwd))
-   {
-   $result=true;
-   }
-   else
-   {
-   	$result=false;
-   }
-return $result;
-}
-*/
 
-/*
-function loginUser($con,$name,$pwd)
-{
-	$useridExists=userIdExists($con,$name,$name);
-	if($useridExists===false)
-	{
-		header("location:loginIN.html?error=wronglogin");
-		exit();
-	}
-
-    $pwdHashed=$useridExists["passWord"];
-    $checkpwd=password_verify($pwd,$hashedPwd);
-    if($checkpwd===false)
-    {
-    	header("location:loginIN.html?error=wronglogin");
-    	exit();
-    }
-    else if($checkpwd ===true)
-    {
-       session_start();
-       $_SESSION["userId"]=$useridExists["userId"];
-       $_SESSION["userName"]=$useridExists["userName"];
-       header("location:asshtml.html");
-       exit();
-    }
-
-}
-
-*/

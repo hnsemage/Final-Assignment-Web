@@ -14,19 +14,19 @@ $cpwd=$_POST["cpass"];
 
 if(emptyInputSignup($name,$email,$pword,$cpwd) !==false)//if one if the input field empty
 {
-  echo ("location:registration.html?error=emptyinput");
+  echo "<br<center><h3>location:registration.html?error=emptyinput</h3></center>";
   exit();
 }
 
 if(invalidUname($name) !==false)
 {
-	echo "<br><h2>location:registration.html?error=invalidUserName</h2>";
+	echo "<br<center><h3>location:registration.html?error=invalidUserName</h3></center>";
     exit();
 }
 
 if(invalidEmail($email) !==false)
 {
-	echo "<h2><br>location:registration.html?error=invalidEmail</h2>";
+	echo "<br<center><h3>location:registration.html?error=invalidEmail</h3></center>";
     exit();
 }
 
@@ -34,13 +34,13 @@ if(invalidEmail($email) !==false)
 
 if(pwdMatch($pword,$cpwd) !==false)
 {
-	echo "<h2><br>location:registration.html?error=passwordsDontMatch</h2>";
+	echo "<br<center><h3>location:registration.html?error=passwordsDontMatch</h3></center>";
     exit();
 }
 
 if(userIdExists($con,$name,$email) !==false)
 {
-	echo "<h2><br>location:registration.html?error=userName&emailTaken</h2>";
+	echo "<br<center><h3>location:registration.html?error=userName&emailTaken</h3></center>";
     exit();
 }
 
@@ -50,7 +50,7 @@ createUser($con,$name,$email,$pword);
 }
 else
 {
-	echo "<br><h2>location:registration.html</h2>";
+	echo "<br<center><h3>location:registration.html</h3></center>";
 	
 }
  

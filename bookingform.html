@@ -3,8 +3,8 @@
 <head>
     <title></title>
 
-<link rel="stylesheet" href="bookingform.css">
 <script type="text/javascript" src="nav.js"></script>
+<link rel="stylesheet" type="text/css" href="bookingform.css">
 <link rel="stylesheet" type="text/css" href="nav.css">
 <link rel="stylesheet"href="table.css">
 <meta name="viewport" content="width=device-width, intial-scale=1.0">
@@ -29,42 +29,74 @@
         <i class="fa fa-bars"></i>
       </a>
   </div>
+<div class="container">
+  <form action="action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Adults</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="ADULTS">
+          <option value="australia">SELECT</option>
+          <option value="australia">One Person</option>
+          <option value="canada">Two Persons</option>
+          <option value="usa">Three Persons</option>
+        </select>
+      </div>
+       <div class="row">
+      <div class="col-25">
+        <label for="country">Childrens</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="CHILDRENS">
+          <option value="australia">SELECT</option>
+          <option value="australia">One Person</option>
+          <option value="canada">Two Persons</option>
+          <option value="usa">Three Persons</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Room Type</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="ROOM TYPE">
+          <option value="australia">SELECT</option>
+          <option value="australia">Superior Room</option>
+          <option value="canada">Deluxe Room</option>
+         
+        </select>
+      </div>
+    </div>
+   <br><br><br>
 
-<div class="option">
-  <center>
-    <div class="custom-select" style="width:200px;">
-  <select>
-    <option value="0">ACCOMMODATION</option>
-    <option value="1">Superior Room</option>
-    <option value="2">Deluxe Room</option>
-   </select>
+  
+    <center>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
 </div>
 
 
-<br><br><br><br><br>
-
- <div class="custom-select" style="width:200px;">
-  <select>
-    <option value="0">ADULT</option>
-    <option value="1">One person</option>
-    <option value="2">Two persons</option>
-     <option value="2">Three persons</option>
-   </select>
-</div>
-<br><br><br><br><br>
-
- <div class="custom-select" style="width:200px;">
-  <select>
-    <option value="0">CHILDREN</option>
-    <option value="1">One person</option>
-    <option value="2">Two persons</option>
-     <option value="2">Three persons</option>
-   </select>
-</div>
-</center>
-</div>
-<br><br><br><br><br><br><br><br><br>
-
+<br><br><br><br><br><br>
 <div class="footer">
   <p> &nbsp;&nbsp; <a class="link2" href="contact.html">Contact&nbsp;&nbsp;</a>|&nbsp;&nbsp;@2017-2020&nbsp;&nbsp;|&nbsp;&nbsp;Sea Side South Park Hotel&nbsp;&nbsp;|&nbsp;&nbsp;All Rights Reserved&nbsp;&nbsp;</p>
 </div>
@@ -72,7 +104,6 @@
 
 
 
- <script src="booking.js"></script>
 
 
 

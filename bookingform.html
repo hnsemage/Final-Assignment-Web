@@ -8,16 +8,16 @@
 <link rel="stylesheet" type="text/css" href="nav.css">
 <link rel="stylesheet"href="table.css">
 <meta name="viewport" content="width=device-width, intial-scale=1.0">
-<link rel="stylesheet"href="asscss.css">
 <link rel="stylesheet" type="text/css" href="nav.css">
+<link rel="stylesheet"href="homecss.css">
 <link rel="stylesheet" type="text/css" href="booking.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script type="text/javascript" src="nav.js"></script>
 </head>
 <body>
 
-    <div class="topnav" id="myTopnav">
-    <font face="Harrington"><p class="slogan">Your Lifestyle</p></font>
+   <div class="topnav" id="myTopnav">
+    <img class="slogan" src="logo.png">
       <a href="asshtml.html">Home</a>
     <a href="#news">About</a>
       <a href="#contact">Contact</a>
@@ -29,6 +29,7 @@
         <i class="fa fa-bars"></i>
       </a>
   </div>
+
 <div class="container">
   <form action="action_page.php">
     <div class="row">
@@ -43,8 +44,19 @@
       <div class="col-25">
         <label for="lname">Last Name</label>
       </div>
+
+ <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Contact Number</label>
+      </div>
+
+
       <div class="col-75">
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <input type="text" id="lname" name="lastname" placeholder="type here">
       </div>
     </div>
     <div class="row">
@@ -85,7 +97,22 @@
         </select>
       </div>
     </div>
-   <br><br><br>
+
+    <br><br><br><br><br>
+      <center><form action="/action_page.php">
+  <label for="birthday">Check-in:</label>
+  <input type="date" id="birthday" name="birthday">
+  </form></center>
+
+ <br><br><br>
+
+  <center><form action="/action_page.php">
+  <label for="birthday">Check-out:</label>
+  <input type="date" id="birthday" name="birthday">
+  </form></center>
+
+
+ <br><br><br>
 
   
     <center>

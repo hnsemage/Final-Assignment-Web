@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet"href="homecss.css">
+<link rel="stylesheet" type="text/css" href="nav.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="nav.js"></script>
+
+	<title>Home</title>
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+		<img class="slogan" src="logo.png">
+<a href="Home.html">Home</a>
+<a href="About Us.html">About</a>
+<a href="index.html">Contact</a>
+<a href="rooms.html">Accommodations</a>
+<a href="booking.html">Booking</a>
+<a href="fasili.html">Facilities</a>
+<a href="registration.html">Registration</a>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+<i class="fa fa-bars"></i>
+</a>
+	</div>
+
+	<div class="all">
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+				
+				<img src="1.jpg" alt="1" class="img1">
+			</div>
+			<div class="mySlides fade">
+				
+				<img src="2.jpg"  class="img1">
+			</div>
+			<div class="mySlides fade">
+				
+				<img src="3.jpg" class="img1">
+			</div>
+		</div>
+
+		<div class="mySlides fade">
+				
+				<img src="4.jpg" class="img1">
+			</div>
+		<br>
+			<div style="text-align:center">
+  				<span class="dot"></span> 
+  				<span class="dot"></span> 
+  				<span class="dot"></span> 
+  				<span class="dot"></span> 
+			</div>
+
+	<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); 
+}
+</script>
+<dr>
+<div class="row">
+  <div class="side">
+    <h1>Location</h1>
+    <iframe width="600" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=galle fort sri lanka&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+      
+    </iframe>
+</div>
+  <style>
+    .mapouter{position:relative;text-align:right;width:600px;height:400px;}
+  .gmap_canvas {overflow:hidden;background:none!important;width:600px;height:400px;
+  }
+</style>
+
+
+<div class="column">
+  <h1>Gallary</h1>
+<a href="MultiHotel.html"><img src="2.jpg" class="img2"></a>
+</div>
+
+<div class="footer">
+  <p> &nbsp;&nbsp; <a class="link2" href="contact.html">Contact</a>&nbsp;&nbsp;|&nbsp;&nbsp;@2017-2020&nbsp;&nbsp;|&nbsp;&nbsp;Sea Side South Park Hotel&nbsp;&nbsp;|&nbsp;&nbsp;All Rights Reserved&nbsp;&nbsp;</p>
+</div>
+</body>
+</html>

@@ -1,5 +1,5 @@
 <?php
-
+include 'registration.html';
 include 'dbh.php';
 include 'functions.php';
 
@@ -14,19 +14,19 @@ $cpwd=$_POST["cpass"];
 
 if(emptyInputSignup($name,$email,$pword,$cpwd) !==false)//if one if the input field empty
 {
-  header("location:registration.html?error=emptyinput");
+  echo "<br<center><h3>location:registration.html?error=emptyinput</h3></center>";
   exit();
 }
 
 if(invalidUname($name) !==false)
 {
-	header("location:registration.html?error=invalidUserName");
+	echo "<br<center><h3>location:registration.html?error=invalidUserName</h3></center>";
     exit();
 }
 
 if(invalidEmail($email) !==false)
 {
-	header("location:registration.html?error=invalidEmail");
+	echo "<br<center><h3>location:registration.html?error=invalidEmail</h3></center>";
     exit();
 }
 
@@ -34,13 +34,13 @@ if(invalidEmail($email) !==false)
 
 if(pwdMatch($pword,$cpwd) !==false)
 {
-	header("location:registration.html?error=passwordsDontMatch");
+	echo "<br<center><h3>location:registration.html?error=passwordsDontMatch</h3></center>";
     exit();
 }
 
 if(userIdExists($con,$name,$email) !==false)
 {
-	header("location:registration.html?error=userName&emailTaken");
+	echo "<br<center><h3>location:registration.html?error=userName&emailTaken</h3></center>";
     exit();
 }
 
@@ -50,7 +50,7 @@ createUser($con,$name,$email,$pword);
 }
 else
 {
-	header("location:registration.html");
+	echo "<br<center><h3>location:registration.html</h3></center>";
 	
 }
  
